@@ -149,7 +149,7 @@ create table pacote_servico(
     id_pacote int not null,
     id_servico int not null,
     quantidade int,
-    primary key (id_pacote, id_servico), -- PK Composta[cite: 8]
+    primary key (id_pacote, id_servico),
     constraint fk_ps_pacote
         foreign key (id_pacote) references pacote(id_pacote)
         on delete restrict,
